@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'git-hub-credentials', url: 'https://github.com/akulasathish/fronendCICD.git', branch: 'master'
+                git credentialsId: 'git-hub-credentials', url: 'https://github.com/akulasathish/react-cicd-k8s.git', branch: 'main'
             }
         }
         stage('Build Docker Image') {
